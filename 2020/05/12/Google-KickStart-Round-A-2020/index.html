@@ -1,0 +1,569 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+
+
+
+
+<head>
+  <meta charset="UTF-8">
+  <link rel="apple-touch-icon" sizes="76x76" href="/img/favicon.png">
+  <link rel="icon" type="image/png" href="/img/favicon.png">
+  <meta name="viewport"
+        content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, shrink-to-fit=no">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  
+  <meta name="theme-color" content="#2f4154">
+  <meta name="description" content="">
+  <meta name="author" content="Hanmeng">
+  <meta name="keywords" content="">
+  <title>Google KickStart Round A 2020 - hi</title>
+
+  <link  rel="stylesheet" href="https://cdn.staticfile.org/twitter-bootstrap/4.4.1/css/bootstrap.min.css" />
+<link  rel="stylesheet" href="https://cdn.staticfile.org/github-markdown-css/4.0.0/github-markdown.min.css" />
+
+
+  <link  rel="stylesheet" href="https://cdn.staticfile.org/highlight.js/10.0.0/styles/github-gist.min.css" />
+
+
+<!-- 主题依赖的图标库，不要自行修改 -->
+
+<link rel="stylesheet" href="//at.alicdn.com/t/font_1749284_fmb4a04yx8h.css">
+
+
+
+<link rel="stylesheet" href="//at.alicdn.com/t/font_1736178_pjno9b9zyxs.css">
+
+
+
+
+<link  rel="stylesheet" href="/css/main.css" />
+
+<!-- 自定义样式保持在最底部 -->
+
+
+<meta name="generator" content="Hexo 4.2.0"></head>
+
+
+<body>
+  <header style="height: 70vh;">
+    <nav id="navbar" class="navbar fixed-top  navbar-expand-lg navbar-dark scrolling-navbar">
+  <div class="container">
+    <a class="navbar-brand"
+       href="/">&nbsp;<strong>Fluid</strong>&nbsp;</a>
+
+    <button id="navbar-toggler-btn" class="navbar-toggler" type="button" data-toggle="collapse"
+            data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <div class="animated-icon"><span></span><span></span><span></span></div>
+    </button>
+
+    <!-- Collapsible content -->
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ml-auto text-center">
+        
+          
+          
+          
+          <li class="nav-item">
+            <a class="nav-link" href="/">
+              <i class="iconfont icon-home-fill"></i>
+              首页</a>
+          </li>
+        
+          
+          
+          
+          <li class="nav-item">
+            <a class="nav-link" href="/archives/">
+              <i class="iconfont icon-archive-fill"></i>
+              归档</a>
+          </li>
+        
+          
+          
+          
+          <li class="nav-item">
+            <a class="nav-link" href="/categories/">
+              <i class="iconfont icon-category-fill"></i>
+              分类</a>
+          </li>
+        
+          
+          
+          
+          <li class="nav-item">
+            <a class="nav-link" href="/tags/">
+              <i class="iconfont icon-tags-fill"></i>
+              标签</a>
+          </li>
+        
+          
+          
+          
+          <li class="nav-item">
+            <a class="nav-link" href="/about/">
+              <i class="iconfont icon-user-fill"></i>
+              关于</a>
+          </li>
+        
+        
+          <li class="nav-item" id="search-btn">
+            <a class="nav-link" data-toggle="modal" data-target="#modalSearch">&nbsp;&nbsp;<i
+                class="iconfont icon-search"></i>&nbsp;&nbsp;</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+</nav>
+
+    <div class="view intro-2" id="background" parallax=true
+         style="background: url('/img/default.png') no-repeat center center;
+           background-size: cover;">
+      <div class="full-bg-img">
+        <div class="mask flex-center" style="background-color: rgba(0, 0, 0, 0.3)">
+          <div class="container text-center white-text fadeInUp">
+            <span class="h2" id="subtitle">
+              
+            </span>
+
+            
+              
+                <div class="mt-3 post-meta">
+                  <i class="iconfont icon-date-fill" aria-hidden="true"></i>
+                  <time datetime="2020-05-12 00:00">
+                    2020年5月12日 凌晨
+                  </time>
+                </div>
+              
+
+              <div class="mt-1">
+                
+                  
+                  <span class="post-meta mr-2">
+                    <i class="iconfont icon-chart"></i>
+                    1.9k 字
+                  </span>
+                
+
+                
+                  
+                  <span class="post-meta mr-2">
+                      <i class="iconfont icon-clock-fill"></i>
+                    
+                    
+                    27
+                     分钟
+                  </span>
+                
+
+                
+              </div>
+            
+          </div>
+
+          
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    
+      
+
+<div class="container-fluid">
+  <div class="row">
+    <div class="d-none d-lg-block col-lg-2"></div>
+    <div class="col-lg-8 nopadding-md">
+      <div class="container nopadding-md" id="board-ctn">
+        <div class="py-5" id="board">
+          <div class="post-content mx-auto" id="post">
+            
+            <article class="markdown-body">
+              <p>比赛是在2020/03/22，人生第一次kickstart，当时leetcode都没过百题就上了，菜并兴奋着。只做出来两道半，排名也不是很高。时隔两个月再回顾当时的提交记录，只想感叹我当初如此勇敢无畏，什么都不会，什么都敢写，而且拿<code>submit</code>当做<code>test</code>来用…</p>
+<h1 id="Allocation"><a href="#Allocation" class="headerlink" title="Allocation"></a>Allocation</h1><h4 id="题目"><a href="#题目" class="headerlink" title="题目"></a>题目</h4><p>有<code>n</code>个房子，每个价格为<code>A[i]</code>，而你有<code>B</code>刀，问可买几套。</p>
+<h4 id="思路"><a href="#思路" class="headerlink" title="思路"></a>思路</h4><p>秒。用贪心的思想，每次买最便宜的，直到买不起为止。<br>算法分两步：首先排序，然后一次遍历，直到余额不足以支付当前的房子。</p>
+<h4 id="复杂度"><a href="#复杂度" class="headerlink" title="复杂度"></a>复杂度</h4><p>时间复杂度<code>O(nlog(n))</code>，<code>n</code>为房子数量。<br>空间复杂度<code>O(1)。</code></p>
+<h4 id="代码"><a href="#代码" class="headerlink" title="代码"></a>代码</h4><pre><code class="hljs python">t = int(input())
+<span class="hljs-keyword">for</span> i <span class="hljs-keyword">in</span> range(<span class="hljs-number">1</span>, t + <span class="hljs-number">1</span>):
+    num, money = map(int, input().split(<span class="hljs-string">" "</span>))
+    res = <span class="hljs-number">0</span>
+    prices = sorted([int(s) <span class="hljs-keyword">for</span> s <span class="hljs-keyword">in</span> input().split(<span class="hljs-string">" "</span>)])
+    <span class="hljs-keyword">for</span> j <span class="hljs-keyword">in</span> range(num):
+        <span class="hljs-keyword">if</span> money - prices[j] &gt;= <span class="hljs-number">0</span>:
+            money -= prices[j]
+            res += <span class="hljs-number">1</span>
+        <span class="hljs-keyword">else</span>:
+            <span class="hljs-keyword">break</span>
+    print(<span class="hljs-string">"Case #&#123;&#125;: &#123;&#125;"</span>.format(i, res))</code></pre>
+<h1 id="Plates"><a href="#Plates" class="headerlink" title="Plates"></a>Plates</h1><h4 id="题目-1"><a href="#题目-1" class="headerlink" title="题目"></a>题目</h4><p>有<code>N</code>堆盘子，每堆有<code>k</code>个。每个盘子有自己的价值。小P想拿走<code>p</code>个盘子，注意，每堆拿走的盘子一定是最上面的那些。问拿走的盘子的价值是多少。<br>翻译：给定数组<code>values[n][k]</code>和正数<code>p</code>，需要数组中选择<code>p</code>项。选择的规则是：如果选择<code>values[i][j]</code>，那么一定要选择<code>values[i][0:j-1]</code>。求最大和。</p>
+<h4 id="naive的心路历程"><a href="#naive的心路历程" class="headerlink" title="naive的心路历程"></a>naive的心路历程</h4><p>不得不吐槽一下，我第一反应是贪心法，用<code>n</code>个指针指向<code>n</code>个堆，每次选择值最大的，移动该堆的指针。而且我错误地做法遭遇了TLE，于是我一往无前地继续优化orz，改用heap来做，类似于合并k个链表。就是建立最大堆，每次pop出指最大的盘子。终于我WA了，清醒一点才发现这种贪心的思想并行不通。我在这道题折腾了很久，直到万念俱灰万籁俱寂，无奈之下暴力过了小数据量。</p>
+<h4 id="回看"><a href="#回看" class="headerlink" title="回看"></a>回看</h4><p>啊，如此明显的dp！我感受到了我飞速的进步。首先求<code>values</code>的前缀和数组，然后二维dp。不过挺容易写错的，加一减一什么的。最后决定将<code>suf</code>数组和<code>dp</code>数组都补一圈0，这样两者之间依旧是对齐的，写起来方便一点。</p>
+<h4 id="dp推导"><a href="#dp推导" class="headerlink" title="dp推导"></a>dp推导</h4><p><code>dp[i][j]</code>表示在前<code>i</code>堆（从1开始）的盘子拿出<code>j</code>个（从1开始）的最大值。我们可以选择在第<code>i</code>堆拿走<code>m∈[0, j]</code>个盘子，拥有的价值为<code>suf[i][j]</code>。我们还需要从前<code>i-1</code>堆拿走<code>p-j</code>个盘子，也就是再加上<code>dp[i-1][j-m]</code>的价值。注意，<code>m</code>不能超过第<code>i</code>堆盘子的总个数，所以准确来说，<code>m ∈ [0, min(j, k)]</code>。</p>
+<pre><code class="hljs markdown">for i [1, N]:
+ for j [1, P]:
+  dp[<span class="hljs-string">i</span>][<span class="hljs-symbol">j</span>] := 0
+   for m [0, min(j, K)]:
+    dp[<span class="hljs-string">i</span>][<span class="hljs-symbol">j</span>] = max(dp[<span class="hljs-string">i</span>][<span class="hljs-symbol">j</span>], dp[<span class="hljs-string">i-1</span>][<span class="hljs-symbol">j-m</span>]+suf[<span class="hljs-string">i</span>][<span class="hljs-symbol">m</span>])</code></pre>
+<h4 id="复杂度分析"><a href="#复杂度分析" class="headerlink" title="复杂度分析"></a>复杂度分析</h4><p>时间复杂度：<code>O(nkp)</code>，三重循环。<br>空间复杂度：<code>O(np)</code>，<code>dp</code>数组的大小。</p>
+<h4 id="代码-1"><a href="#代码-1" class="headerlink" title="代码"></a>代码</h4><pre><code class="hljs python">t = int(input())
+<span class="hljs-keyword">for</span> c <span class="hljs-keyword">in</span> range(<span class="hljs-number">1</span>, t + <span class="hljs-number">1</span>):
+    n, k, p = map(int, input().split(<span class="hljs-string">" "</span>))
+    values = []
+    <span class="hljs-keyword">for</span> j <span class="hljs-keyword">in</span> range(n):
+        values.append([int(s) <span class="hljs-keyword">for</span> s <span class="hljs-keyword">in</span> input().split(<span class="hljs-string">" "</span>)])
+    <span class="hljs-comment"># suffix</span>
+    suf = [[<span class="hljs-number">0</span>] * (k + <span class="hljs-number">1</span>) <span class="hljs-keyword">for</span> _ <span class="hljs-keyword">in</span> range(n + <span class="hljs-number">1</span>)]
+    <span class="hljs-keyword">for</span> i <span class="hljs-keyword">in</span> range(<span class="hljs-number">1</span>, n + <span class="hljs-number">1</span>):
+        <span class="hljs-keyword">for</span> j <span class="hljs-keyword">in</span> range(<span class="hljs-number">1</span>, k + <span class="hljs-number">1</span>):
+            suf[i][j] = suf[i][j - <span class="hljs-number">1</span>] + values[i - <span class="hljs-number">1</span>][j - <span class="hljs-number">1</span>]
+    <span class="hljs-comment"># dp</span>
+    dp = [[<span class="hljs-number">0</span>] * (p + <span class="hljs-number">1</span>) <span class="hljs-keyword">for</span> _ <span class="hljs-keyword">in</span> range(n + <span class="hljs-number">1</span>)]
+    <span class="hljs-keyword">for</span> i <span class="hljs-keyword">in</span> range(<span class="hljs-number">1</span>, n + <span class="hljs-number">1</span>):
+        <span class="hljs-keyword">for</span> j <span class="hljs-keyword">in</span> range(<span class="hljs-number">1</span>, p + <span class="hljs-number">1</span>):
+            <span class="hljs-keyword">for</span> m <span class="hljs-keyword">in</span> range(min(j + <span class="hljs-number">1</span>, k + <span class="hljs-number">1</span>)):
+                dp[i][j] = max(dp[i][j], dp[i - <span class="hljs-number">1</span>][j - m] + suf[i][m])
+    print(<span class="hljs-string">'Case #&#123;&#125;: &#123;&#125;'</span>.format(c, dp[n][p]))</code></pre>
+<h1 id="Workout"><a href="#Workout" class="headerlink" title="Workout"></a>Workout</h1><h4 id="题目-2"><a href="#题目-2" class="headerlink" title="题目"></a>题目</h4><p>小T准备上<code>n</code>节健身课，每节课为<code>M[i]</code>分钟，<code>M</code>是严格递增的。她可以在其中再插入<code>k</code>节课，时长自选。健身项目的难度定义为相邻课的时长差的最大值。问小T能设计出的最低难度是多少。</p>
+<h4 id="非正规解法"><a href="#非正规解法" class="headerlink" title="非正规解法"></a>非正规解法</h4><p>我当时又角度清奇。我是这么想的，举个栗子，比如<code>sessions</code>为<code>[10 13 15 16 17]</code>，能补两次。先算出差值矩阵<code>init</code>为<code>[3, 2, 1, 1]</code>，待除矩阵<code>div = [1, 1, 1, 1]</code>，两者pixelwise除一下，得到难度矩阵<code>diff = [3, 2, 1, 1]</code>。我们每次找<code>diff</code>中最大的，然后将它对应的<code>div</code>+1，算出新的<code>diff</code>。我们插入一次课，有<code>div = [2, 1, 1, 1]</code>，<code>diff = [2, 2, 1, 1]</code>。再插入一次（选择哪个2为最大值不重要），有<code>div = [3, 1, 1, 1]</code>，<code>diff = [1, 2, 1, 1]</code>，答案就是<code>max(diff) = 2</code>。<br>经检验，这个思路是正确的，不过时间复杂度是<code>O(kn)</code>，TLE警告。所以我选择用heap优化，降到了O(klog(n)) = O(1e5 log(1e5))。耶最终AC了。（赛前我做了heap的专题，所以真的很喜欢朝着heap靠orz</p>
+<pre><code class="hljs python"><span class="hljs-keyword">from</span> math <span class="hljs-keyword">import</span> ceil
+<span class="hljs-keyword">import</span> heapq
+
+t = int(input())
+<span class="hljs-keyword">for</span> i <span class="hljs-keyword">in</span> range(<span class="hljs-number">1</span>, t+<span class="hljs-number">1</span>):
+    n, k = map(int, input().split(<span class="hljs-string">" "</span>))
+    sessions = [int(s) <span class="hljs-keyword">for</span> s <span class="hljs-keyword">in</span> input().split(<span class="hljs-string">" "</span>)]
+    diff = []
+    <span class="hljs-keyword">for</span> j <span class="hljs-keyword">in</span> range(<span class="hljs-number">1</span>, n):
+        diff.append(sessions[j]-sessions[j<span class="hljs-number">-1</span>])
+    diff_div_init = [(-elem, <span class="hljs-number">1</span>, elem) <span class="hljs-keyword">for</span> elem <span class="hljs-keyword">in</span> diff]
+    heapq.heapify(diff_div_init)
+    <span class="hljs-keyword">while</span>(k &gt; <span class="hljs-number">0</span>):
+        k -= <span class="hljs-number">1</span>
+        currdiff, currdiv, init = heapq.heappop(diff_div_init)
+        heapq.heappush(diff_div_init, (-ceil((init) / (currdiv + <span class="hljs-number">1</span>)), currdiv + <span class="hljs-number">1</span>, init))
+    currdiff, currdiv, ind = heapq.heappop(diff_div_init)
+    print(<span class="hljs-string">'Case #&#123;&#125;: &#123;&#125;'</span>.format(i, -currdiff))</code></pre>
+<h4 id="二分"><a href="#二分" class="headerlink" title="二分"></a>二分</h4><p>时光荏苒，岁月如梭。通过这俩月的学习，我一眼就能看出这题是很典型的“对值的二分”，好励志。我们的目标是寻找最小的最大差值<code>d</code>，who还能满足切分次数<code>k&#39; &lt;= k</code>。<code>d</code>初始化的区间为<code>[1, max_diff]</code>，在这个区间内二分即可。时间复杂度为<code>O(nlog(max_diff)) = O(nlog(m)) = O(1e5 log(1e9))</code>。</p>
+<p>相似题目推荐：<a href="https://leetcode-cn.com/problems/kth-smallest-element-in-a-sorted-matrix/solution/zui-xiao-dui-er-fen-fa-pythonjava-by-coldme-2/" target="_blank" rel="noopener">378. 有序矩阵中第K小的元素</a>、<a href="https://leetcode-cn.com/problems/split-array-largest-sum/solution/dui-zhi-de-er-fen-fa-by-coldme-2/" target="_blank" rel="noopener">410. 分割数组的最大值</a>。刷过几道同类题后，手感就来了。</p>
+<pre><code class="hljs python"><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">valid</span><span class="hljs-params">(sess, mid, k)</span>:</span>
+    <span class="hljs-keyword">for</span> i <span class="hljs-keyword">in</span> range(<span class="hljs-number">1</span>, len(sess)):
+        diff = sess[i] - sess[i - <span class="hljs-number">1</span>]
+        <span class="hljs-keyword">if</span> diff &gt; mid:
+            <span class="hljs-comment"># notice here, also can be written as</span>
+            <span class="hljs-comment"># k -= ceil(diff / mid) - 1</span>
+            k -= (diff - <span class="hljs-number">1</span>) // mid
+            <span class="hljs-keyword">if</span> k &lt; <span class="hljs-number">0</span>:
+                <span class="hljs-keyword">return</span> <span class="hljs-literal">False</span>
+    <span class="hljs-keyword">return</span> <span class="hljs-literal">True</span>
+
+t = int(input())
+<span class="hljs-keyword">for</span> c <span class="hljs-keyword">in</span> range(<span class="hljs-number">1</span>, t+<span class="hljs-number">1</span>):
+    n, k = map(int, input().split(<span class="hljs-string">" "</span>))
+    sess = [int(s) <span class="hljs-keyword">for</span> s <span class="hljs-keyword">in</span> input().split(<span class="hljs-string">" "</span>)]
+    low, high = <span class="hljs-number">1</span>, <span class="hljs-number">1</span>
+    <span class="hljs-keyword">for</span> i <span class="hljs-keyword">in</span> range(<span class="hljs-number">1</span>, n):
+        high = max(high, sess[i] - sess[i - <span class="hljs-number">1</span>])
+    <span class="hljs-keyword">while</span> low &lt; high:
+        mid = low + (high - low) // <span class="hljs-number">2</span>
+        <span class="hljs-keyword">if</span> valid(sess, mid, k):
+            high = mid
+        <span class="hljs-keyword">else</span>:
+            low = mid + <span class="hljs-number">1</span>
+    print(<span class="hljs-string">'Case #&#123;&#125;: &#123;&#125;'</span>.format(c, low))</code></pre>
+<h1 id="Bundling"><a href="#Bundling" class="headerlink" title="Bundling"></a>Bundling</h1><h4 id="题目-3"><a href="#题目-3" class="headerlink" title="题目"></a>题目</h4><p>有<code>n</code>个字符串，对它们进行分组，每组<code>k</code>个字符串，保证可均分。每组的分数是组内所有字符串的最长公共前缀的长度，求总分数。</p>
+<h4 id="思路-1"><a href="#思路-1" class="headerlink" title="思路"></a>思路</h4><p>当时也知道是前缀树，但不知道下一步该怎么求。现在想想，依旧没想到：)。参考了<a href="https://blog.csdn.net/sinat_32682001/article/details/105109492" target="_blank" rel="noopener">这里的解题思路</a>，才想明白的。记每个前缀字符被共享的次数为$count$，那么这个字符的最大贡献为$$\lfloor \frac{cnt}{k} \rfloor$$，所以总分数为：<br>$$\Sigma_i \lfloor \frac{cnt_i}{k} \rfloor$$<br>另外，Trie的<code>add</code>函数如果使用递归，会超时，所以改用了迭代。</p>
+<pre><code class="hljs python"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">TrieNode</span>:</span>
+    <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">__init__</span><span class="hljs-params">(self)</span>:</span>
+        self.cnt = <span class="hljs-number">0</span>
+        self.children = [<span class="hljs-literal">None</span>] * <span class="hljs-number">26</span>
+
+    <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">add</span><span class="hljs-params">(self, s)</span>:</span>
+        self.cnt += <span class="hljs-number">1</span>
+        <span class="hljs-keyword">if</span> <span class="hljs-keyword">not</span> s:
+            <span class="hljs-keyword">return</span>
+        ch = s[<span class="hljs-number">0</span>]
+        i = ord(ch) - ord(<span class="hljs-string">'A'</span>)
+        <span class="hljs-keyword">if</span> <span class="hljs-keyword">not</span> self.children[i]:
+            self.children[i] = TrieNode()
+        self.children[i].add(s[<span class="hljs-number">1</span>:])
+
+
+t = int(input())
+<span class="hljs-keyword">for</span> c <span class="hljs-keyword">in</span> range(<span class="hljs-number">1</span>, t+<span class="hljs-number">1</span>):
+    n, k = map(int, input().split())
+    ss = []
+    <span class="hljs-keyword">for</span> _ <span class="hljs-keyword">in</span> range(n):
+        ss.append(input())
+    <span class="hljs-comment"># Build Trie Tree</span>
+    root = TrieNode()
+    base = ord(<span class="hljs-string">'A'</span>)
+    <span class="hljs-keyword">for</span> s <span class="hljs-keyword">in</span> ss:
+        t = root
+        <span class="hljs-comment"># use iterative way instead of recursively</span>
+        <span class="hljs-keyword">for</span> ch <span class="hljs-keyword">in</span> s:
+            t.cnt += <span class="hljs-number">1</span>
+            i = ord(ch) - base
+            <span class="hljs-keyword">if</span> <span class="hljs-keyword">not</span> t.children[i]:
+                t.children[i] = TrieNode()
+            t = t.children[i]
+        t.cnt += <span class="hljs-number">1</span>
+    <span class="hljs-comment"># Traverse the tree</span>
+    res = <span class="hljs-number">0</span>
+    stack = [root]
+    root.cnt = <span class="hljs-number">0</span>
+    <span class="hljs-keyword">while</span> len(stack):
+        curr = stack.pop()
+        res += curr.cnt // k
+        <span class="hljs-keyword">for</span> child <span class="hljs-keyword">in</span> curr.children:
+            <span class="hljs-keyword">if</span> child <span class="hljs-keyword">and</span> child.cnt &gt;= k:
+                stack.append(child)
+    print(<span class="hljs-string">'Case #%d: %d'</span> % (c, res))</code></pre>
+<h1 id="总结：论比赛的正确打开方式"><a href="#总结：论比赛的正确打开方式" class="headerlink" title="总结：论比赛的正确打开方式"></a>总结：论比赛的正确打开方式</h1><p>在油管follow了william，看他打比赛真是我日常消遣。19min拿下了Round A，respect！<br>虽然自己做题很艰辛，但是看别人做题轻松呀（聪明！</p>
+
+            </article>
+            <hr>
+            <div>
+              <div class="post-metas mb-3">
+                
+                
+                  <div class="post-meta">
+                    <i class="iconfont icon-tags"></i>
+                    
+                      <a class="hover-with-bg" href="/tags/kickstart/">kickstart</a>
+                    
+                  </div>
+                
+              </div>
+              
+                <p class="note note-warning">本博客所有文章除特别声明外，均采用 <a href="https://zh.wikipedia.org/wiki/Wikipedia:CC_BY-SA_3.0%E5%8D%8F%E8%AE%AE%E6%96%87%E6%9C%AC" target="_blank" rel="nofollow noopener noopener">CC BY-SA 3.0协议</a> 。转载请注明出处！</p>
+              
+              
+                <div class="post-prevnext row">
+                  <div class="post-prev col-6">
+                    
+                    
+                  </div>
+                  <div class="post-next col-6">
+                    
+                    
+                      <a href="/2020/05/12/Google-KickStart-Round-B-2020/">
+                        <span class="hidden-mobile">Google KickStart Round B 2020</span>
+                        <span class="visible-mobile">下一篇</span>
+                        <i class="iconfont icon-arrowright"></i>
+                      </a>
+                    
+                  </div>
+                </div>
+              
+            </div>
+
+            
+          </div>
+        </div>
+      </div>
+    </div>
+    
+      <div class="d-none d-lg-block col-lg-2 toc-container" id="toc-ctn">
+        <div id="toc">
+  <p class="toc-header"><i class="iconfont icon-list"></i>&nbsp;目录</p>
+  <div id="tocbot"></div>
+</div>
+
+      </div>
+    
+  </div>
+</div>
+
+<!-- Custom -->
+
+
+    
+  </main>
+
+  
+    <a id="scroll-top-button" href="#" role="button">
+      <i class="iconfont icon-arrowup" aria-hidden="true"></i>
+    </a>
+  
+
+  
+    <div class="modal fade" id="modalSearch" tabindex="-1" role="dialog" aria-labelledby="ModalLabel"
+     aria-hidden="true">
+  <div class="modal-dialog modal-dialog-scrollable modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header text-center">
+        <h4 class="modal-title w-100 font-weight-bold">搜索</h4>
+        <button type="button" id="local-search-close" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body mx-3">
+        <div class="md-form mb-5">
+          <input type="text" id="local-search-input" class="form-control validate">
+          <label data-error="x" data-success="v"
+                 for="local-search-input">关键词</label>
+        </div>
+        <div class="list-group" id="local-search-result"></div>
+      </div>
+    </div>
+  </div>
+</div>
+  
+
+  
+
+  
+
+  <footer class="mt-5">
+  <div class="text-center py-3">
+    <div>
+      <a href="https://hexo.io" target="_blank" rel="nofollow noopener"><span>Hexo</span></a>
+      <i class="iconfont icon-love"></i>
+      <a href="https://github.com/fluid-dev/hexo-theme-fluid" target="_blank" rel="nofollow noopener">
+        <span>Fluid</span></a>
+    </div>
+    
+
+    
+
+    
+  </div>
+</footer>
+
+<!-- SCRIPTS -->
+<script  src="https://cdn.staticfile.org/jquery/3.4.1/jquery.min.js" ></script>
+<script  src="https://cdn.staticfile.org/twitter-bootstrap/4.4.1/js/bootstrap.min.js" ></script>
+<script  src="/js/main.js" ></script>
+
+
+  <script  src="/js/lazyload.js" ></script>
+
+
+
+  
+  <script  src="https://cdn.staticfile.org/tocbot/4.11.1/tocbot.min.js" ></script>
+  <script>
+    $(document).ready(function () {
+      var boardCtn = $('#board-ctn');
+      var boardTop = boardCtn.offset().top;
+
+      tocbot.init({
+        tocSelector: '#tocbot',
+        contentSelector: '.post-content',
+        headingSelector: 'h1,h2,h3,h4,h5,h6',
+        linkClass: 'tocbot-link',
+        activeLinkClass: 'tocbot-active-link',
+        listClass: 'tocbot-list',
+        isCollapsedClass: 'tocbot-is-collapsed',
+        collapsibleClass: 'tocbot-is-collapsible',
+        collapseDepth: 0,
+        scrollSmooth: true,
+        headingsOffset: -boardTop
+      });
+      if ($('.toc-list-item').length > 0) {
+        $('#toc').css('visibility', 'visible');
+      }
+    });
+  </script>
+
+
+
+
+
+  <script defer src="https://cdn.staticfile.org/clipboard.js/2.0.6/clipboard.min.js" ></script>
+  <script  src="/js/clipboard-use.js" ></script>
+
+
+
+
+
+
+<!-- Plugins -->
+
+
+
+  <script  src="https://cdn.staticfile.org/typed.js/2.0.11/typed.min.js" ></script>
+  <script>
+    var typed = new Typed('#subtitle', {
+      strings: [
+        '  ',
+        "Google KickStart Round A 2020&nbsp;",
+      ],
+      cursorChar: "_",
+      typeSpeed: 70,
+      loop: false,
+    });
+    typed.stop();
+    $(document).ready(function () {
+      $(".typed-cursor").addClass("h2");
+      typed.start();
+    });
+  </script>
+
+
+
+  <script  src="https://cdn.staticfile.org/anchor-js/4.2.2/anchor.min.js" ></script>
+  <script>
+    anchors.options = {
+      placement: "right",
+      visible: "hover",
+      
+    };
+    var el = "h1,h2,h3,h4,h5,h6".split(",");
+    var res = [];
+    for (item of el) {
+      res.push(".markdown-body > " + item)
+    }
+    anchors.add(res.join(", "))
+  </script>
+
+
+
+  <script  src="/js/local-search.js" ></script>
+  <script>
+    var path = "/local-search.xml";
+    var inputArea = document.querySelector("#local-search-input");
+    inputArea.onclick = function () {
+      searchFunc(path, 'local-search-input', 'local-search-result');
+      this.onclick = null
+    }
+  </script>
+
+
+
+  <script  src="https://cdn.staticfile.org/fancybox/3.5.7/jquery.fancybox.min.js" ></script>
+  <link  rel="stylesheet" href="https://cdn.staticfile.org/fancybox/3.5.7/jquery.fancybox.min.css" />
+
+  <script>
+    $('#post img:not(.no-zoom img, img[no-zoom]), img[zoom]').each(
+      function () {
+        var element = document.createElement('a');
+        $(element).attr('data-fancybox', 'images');
+        $(element).attr('href', $(this).attr('src'));
+        $(this).wrap(element);
+      }
+    );
+  </script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>
